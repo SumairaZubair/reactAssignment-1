@@ -6,7 +6,6 @@ const HeroSection = () => {
         <div className="hero-content">
           <div className='text'>
           <h1>YOUR FEET DESERVE
-            <br/>
              THE BEST</h1>
           <p>
             YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR

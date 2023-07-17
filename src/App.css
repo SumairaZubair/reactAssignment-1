@@ -35,19 +35,30 @@ nav ul {
   gap: 24px;
 }
 
+
 .hero {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   height: calc(100vh - 72px);
 }
-.hero-content {
-  display: flex;
-  /* flex-direction: column; */
-  gap: 36px;
+  .hero-content {
+    display: flex; 
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 36px;
+  }
+.text{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.hero-image{
+  flex-wrap: wrap;
 }
 .hero{
   background: transparent;
   margin-top: 5%;
+  margin-bottom: 10px;
   width: 90%;
   height: 90%;
 }
@@ -66,6 +77,7 @@ nav ul {
   max-width: 400px;
 }
 .hero-btn {
+  margin-left: 5%;
   display: flex;
   gap: 40px;
 }
@@ -78,9 +90,11 @@ nav ul {
   color: var(--gray);
   border: 1px solid gray;
 }
-
+.shopping{
+  margin-left: 5%;
+}
 .shopping p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 .brand-icons {
@@ -91,7 +105,11 @@ nav ul {
   width: 100px;
   height: 100px;
 }
-@media (max-width:700){
+.aflogos{
+  width: 40px;
+  height: 40px;
+}
+@media (max-width:700px){
   button {
     all: unset;
     padding: 3 10px;
@@ -102,24 +120,69 @@ nav ul {
   }
   nav {
     display: flex;
+    display: none;
     /* justify-content: space-between;
     height: 72px;
     align-items: center; */
   }
   
-    /* .container {
-      text-align: center;
-    } */
-/*   
-    .container  {
-      flex-direction: column;
-    } */
-  
     nav ul {
-      flex-direction: column;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      display: none;
     }
+    .hero-btn {
+      margin-left: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .hero-btn button{
+      font-size: 20px;
+    }
+    .hero h1 {
+      margin-top: 15px;
+      font-weight: 800;
+      line-height: 60px;
+      font-size: 40px;
+    }
+    
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+.shopping{
+  margin-left: 5%;
+}
+.shopping p {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
   
     nav li {
-      margin: 0.8em 0;
+      margin: 0.5em 0;
     }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 36px;
   }
+  .hero p {
+    margin-top: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--gray);
+    max-width: 300px;
+  }
+  
+  .text{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .hero-image{
+    flex-wrap: wrap;
+  }
+}
